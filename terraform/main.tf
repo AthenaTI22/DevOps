@@ -30,3 +30,16 @@ resource "aiven_pg_user" "app_user" {
   service_name = aiven_pg.dashboard_db.service_name
   username     = var.db_username
 }
+
+
+resource "aiven_pg_database" "dashboard" {
+  project       = var.aiven_project
+  service_name  = aiven_pg.dashboard_db.service_name
+  database_name = var.database_name
+}
+
+resource "aiven_pg_user" "app_user" {
+  project      = var.aiven_project
+  service_name = aiven_pg.dashboard_db.service_name
+  username     = var.db_username
+}

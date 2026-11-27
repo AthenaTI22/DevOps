@@ -9,12 +9,6 @@ variable "aiven_project" {
   type        = string
 }
 
-variable "cloud_name" {
-  description = "Região/nuvem da Aiven, ex: google-southamerica-east1, aws-sa-east-1"
-  type        = string
-  default     = "aws-us-east-1"
-}
-
 variable "pg_plan" {
   description = "Plano do serviço PostgreSQL (free tier disponível em algumas contas: 'hobbyist')"
   type        = string

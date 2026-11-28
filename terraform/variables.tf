@@ -9,8 +9,14 @@ variable "aiven_project" {
   type        = string
 }
 
+variable "cloud_name" {
+  description = "Nuvem/região do serviço Aiven"
+  type        = string
+  default     = "do-sfo"
+}
+
 variable "pg_plan" {
-  description = "Plano do serviço PostgreSQL (free tier disponível em algumas contas: 'hobbyist')"
+  description = "Plano do serviço PostgreSQL (free tier: 'free-1-1gb')"
   type        = string
   default     = "free-1-1gb"
 }

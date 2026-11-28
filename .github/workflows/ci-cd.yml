@@ -17,7 +17,7 @@ on:
 # O GHCR exige nome de repositório em minúsculas; github.repository vem
 # como "Rodrigo-de-carvalho/Devops-2026", então o nome é fixado em minúsculas.
 env:
-  IMAGE_NAME: ghcr.io/rodrigo-de-carvalho/devops-2026/dashboard-app
+  IMAGE_NAME: ghcr.io/athenati22/devops/dashboard-app
 
 jobs:
   test:

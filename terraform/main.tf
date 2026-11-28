@@ -13,6 +13,7 @@ provider "aiven" {
 
 resource "aiven_pg" "dashboard_db" {
   project                 = var.aiven_project
+  cloud_name              = var.cloud_name
   plan                    = var.pg_plan
   service_name            = var.service_name
   maintenance_window_dow  = "sunday"
